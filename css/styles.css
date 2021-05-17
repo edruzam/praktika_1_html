@@ -56,5 +56,15 @@ img {
     border-width: 1px;
     border-style:solid
 } 
-
- 
+button {
+    -webkit-filter: drop-shadow(5px 5px 5px #666666);
+    filter: drop-shadow(5px 5px 5px #666666);
+    background-color: rgb(35, 12, 245); /* Blue */
+    border: none;
+    color: white;
+    padding: 8px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
