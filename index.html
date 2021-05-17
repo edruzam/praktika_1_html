@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		How To Create Right Aligned Menu
+		Links using HTML and CSS ?
+	</title>
+	
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css"> 
+        <style>
+           
+            /* styling navlist */
+            #navlist {
+                background-color: #0074D9;
+                position: fixed;
+                width: 100%;
+                top:0px;                
+            }
+               
+            /* styling navlist anchor element */
+            #navlist a {
+                float:left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 12px;
+                text-decoration: none;
+                font-size: 15px;
+            }
+            .navlist-right{
+                float:right;
+            }
+       
+            /* hover effect of navlist anchor element */
+            #navlist a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            /* Europe's map without border */
+            #euromap {
+                border-width: 0px;
+                border-style:none   
+            }
+        </style>
+
+</head>
+
+<body>
+	<!-- Navbar items -->
+	<div id="navlist">
+		<a href="#Estonia">Estonia</a>
+		<a href="#France">France</a>
+		<a href="#Germany">Germany</a>
+		<a href="#Greece">Greece</a>
+		<a href="#Italy">Italy</a>
+		<a href="#Latvia">Latvia</a>
+		<a href="#Lithuania">Lithuania</a>
+		<a href="#Poland">Poland</a>
+		<a href="#Spain">Spain</a>
+		<a href="#Sweden">Sweden</a>
+		<a href="#euromap">Map</a>
+		<div class="navlist-right">
+		<a href="#">About Us</a>
+		<a href="#">Contact Us</a>
+		</div>
+	</div>
+
+	<!-- logo with tag -->
+	<div class="content">
+		<h1>
+			European  countries
+		</h1>
+	
+		<b><i>Click in the menu to obtain major info about country</i></b>
+	</div>
+
+    <!-- Start of Europe map -->
+    <img id="euromap" src="./images/europe.jpg" usemap="#europe-map" style=padding-top:50px; border-width=0px;>
+
+    <map name="europe-map" style="width: 512px;height: 447px;">
+        <area shape="rect" coords="280,197,313,217" alt="Estonia" href="#Estonia">
+        <area shape="rect" coords="78,288,161,392" alt="France" href="#France">
+        <area shape="rect" coords="175,250,220,332" alt="Germany" href="#Germany">
+        <area shape="rect" coords="274,427,322,493" alt="Greece" href="#Greece">
+        <area shape="rect" coords="162,353,248,472" alt="Italy" href="#Italy">
+        <area shape="rect" coords="273,218,319,236" alt="Latvia" href="#Latvia">
+        <area shape="rect" coords="273,237,310,262" alt="Lithuania" href="#Lithuania">
+        <area shape="rect" coords="230,257,296,309" alt="Poland" href="#Poland">
+        <area shape="rect" coords="33,366,109,444" alt="Spain" href="#Spain">
+        <area shape="rect" coords="237,116,262,248" alt="Sweden" href="#Sweden">
+    </map>
+    <!-- End of Europe map -->
+    <div>
+        <h2 id="Estonia">Estonia</h2>
+        <img src="images/estonia.jpg" 
+                alt="Estonia flag" 
+                width="150px"
+                height="75px">
+        <p><b>Capital:</b> Tallinn</p>
+        <p><b>Population:</b> 1,329,460</p>
+        <p>
+            Estonia, officially the Republic of Estonia (Estonian: Eesti Vabariik), <br>is a country on the eastern coast of the Baltic Sea in Northern Europe. <br>It is bordered to the north by the Gulf of Finland across from Finland, <br>to the west by the Baltic Sea across from Sweden, <br>to the south by Latvia, and to the east by Lake Peipus and Russia.
+        </p>
+        <br />
+        <table>
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tallinn</td>
+                    <td>394,024</td>
+                </tr>
+                <tr>
+                    <td>Tartu</td>
+                    <td>101,092</td>
+                </tr>
+                <tr>
+                    <td>Narva</td>
+                    <td>66,980</td>
+                </tr>
+                <tr>
+                    <td>Pärnu</td>
+                    <td>44,192</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+
+        <a href="https://en.wikipedia.org/wiki/Estonia">Estonia in Wikipedia</a>
+    </div>
+    <div>
+        <h2 id="France">France</h2>
+        <img src="images/france.jpg" 
+                alt="France flag" 
+                width="150px"
+                height="75px">
+        <p><b>Capital:</b> Paris</p>
+        <p><b>Population:</b> 67,406,000</p>
+        <p>
+            France, officially the French Republic (French: République française), <br>is a country primarily located in Western Europe, consisting of metropolitan <br>France and several overseas regions and territories. The metropolitan area <br>of France extends from the Rhine to the Atlantic Ocean and <br>from the Mediterranean Sea to the English Channel and the North Sea. 
+        </p>
+        <br />
+        <table>
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paris</td>
+                    <td>2,190,327</td>
+                </tr>
+                <tr>
+                    <td>Marseille</td>
+                    <td>862,211</td>
+                </tr>
+                <tr>
+                    <td>Lyon</td>
+                    <td>515,695</td>
+                </tr>
+                <tr>
+                    <td>Toulouse</td>
+                    <td>475,438</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <a href="https://en.wikipedia.org/wiki/France">France in Wikipedia</a>
+    </div>
+    <div>
+        <h2 id="Germany">Germany</h2>
+        <img src="images/germany.jpg" 
+                alt="Germany flag" 
+                width="150px"
+                height="75px">
+        <p><b>Capital:</b> Berlin</p>
+        <p><b>Population:</b> 83,166,711</p>
+        <p>
+            Germany, officially the Federal Republic of Germany (German: Bundesrepublik <br>Deutschland), is a country in Central Europe. It is the second-most populous <br>country in Europe after Russia, and the most populous member state of <br>the European Union. Germany is situated between the Baltic and North seas <br>to the north, and the Alps to the south.
+        </p>
+        <br />
+        <table>
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Berlin</td>
+                    <td>3,275,000</td>
+                </tr>
+                <tr>
+                    <td>Hamburg</td>
+                    <td>1,686,100</td>
+                </tr>
+                <tr>
+                    <td>München</td>
+                    <td>1,185,400</td>
+                </tr>
+                <tr>
+                    <td>Köln</td>
+                    <td>965,300</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Germany">Germany in Wikipedia</a>
+    </div>
+    <div>
+        <h2 id="Greece">Greece</h2>
+        <img src="images/greece.jpg" 
+                alt="Greece flag" 
+                width="150px"
+                height="75px">
+        <p><b>Capital:</b> Athens</p>
+        <p><b>Population:</b> 10,718,565</p>
+        <p>
+            Greece, officially the Hellenic Republic, is a country located in Southeast Europe. <br>Its population is approximately 10.7 million as of 2018; Athens is its largest and <br>capital city, followed by Thessaloniki. Situated on the southern tip of the Balkans, <br>Greece is located at the crossroads of Europe, Asia, and Africa. It shares land borders <br>with Albania to the northwest, North Macedonia and Bulgaria to the north, <br>and Turkey to the northeast.
+        </p>
+        <br />
+        <table>
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Athens</td>
+                    <td>3,090,508</td>
+                </tr>
+                <tr>
+                    <td>Thessaloniki</td>
+                    <td>824,676</td>
+                </tr>
+                <tr>
+                    <td>Patras</td>
+                    <td>167,446</td>
+                </tr>
+                <tr>
+                    <td>Larissa</td>
+                    <td>144,651</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Greece">Greece in Wikipedia</a>
+    </div>
+    <div>
+        <h2 id="Italy">Italy</h2>
+        <img src="images/italy.jpg" 
+                alt="Italy flag" 
+                width="150px"
+                height="75px">
+        <p><b>Capital:</b> Rome</p>
+        <p><b>Population:</b> 60,317,116</p>
+        <p>
+            Italy, officially the Italian Republic (Italian: Repubblica Italiana), is a country consisting <br>of a continental part, delimited by the Alps, a peninsula and several islands surrounding it. <br>Italy is located in Southern Europe, and is also considered part of Western Europe.
+        </p>
+        <br />
+        <table>
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rome</td>
+                    <td>4,342,212</td>
+                </tr>
+                <tr>
+                    <td>Milan</td>
+                    <td>3,250,315</td>
+                </tr>
+                <tr>
+                    <td>Naples</td>
+                    <td>3,084,890</td>
+                </tr>
+                <tr>
+                    <td>Turin</td>
+                    <td>2,259,523</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Italy">Italy in Wikipedia</a>
+    </div>
+    <div>
+        <h2 id="Latvia">Latvia</h2>
+        <img src="images/latvia.jpg" 
+                alt="Latvia flag" 
+                width="150px"
+                height="75px">
+        <p><b>Capital:</b> Riga</p>
+        <p><b>Population:</b> 2,070,371</p>
+        <p>
+            Latvia, officially known as the Republic of Latvia (Latvian: Latvijas Republika), <br>is a country in the Baltic region of Northern Europe. <br>Since Latvia's independence in 1918, it has been referred to as one of the Baltic states. <br>It is bordered by Estonia to the north, Lithuania to the south, Russia to the east, <br>Belarus to the southeast, and shares a maritime border with Sweden to the west.
+        </p>
+        <br />
+        <table>
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Riga</td>
+                    <td>627,487</td>
+                </tr>
+                <tr>
+                    <td>Daugavpils</td>
+                    <td>82,046</td>
+                </tr>
+                <tr>
+                    <td>Liepāja</td>
+                    <td>68,535</td>
+                </tr>
+                <tr>
+                    <td>Jelgava</td>
+                    <td>56,062</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Latvia">Latvia in Wikipedia</a>
+    </div>
+    <div>
+        <h2 id="Lithuania">Lithuania</h2>
+        <img src="images/lithuania.jpg" 
+                alt="Lithuania flag" 
+                width="150px"
+                height="75px">
+        <p><b>Capital:</b> Vilnius</p>
+        <p><b>Population:</b> 2,070,371</p>
+        <p>
+            Lithuania, is a country in the Baltic region of Europe. Lithuania is one of the Baltic states. <br>Situated on the eastern shore of the Baltic Sea, to the southeast of Sweden and to the east<br> of Denmark, Lithuania is bordered by Latvia to the north, Belarus to the east and south, <br>Poland to the south, and Kaliningrad Oblast (a Russian exclave) to the southwest.
+        </p>
+        <br />
+        <table>
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vilnius</td>
+                    <td>589,425</td>
+                </tr>
+                <tr>
+                    <td>Kaunas</td>
+                    <td>293,257</td>
+                </tr>
+                <tr>
+                    <td>Klaipėda</td>
+                    <td>149,046</td>
+                </tr>
+                <tr>
+                    <td>Šiauliai</td>
+                    <td>101,862</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Lithuania">Lithuania in Wikipedia</a>
+    </div>
+    <div>
+        <h2 id="Poland">Poland</h2>
+        <img src="images/poland.jpg" 
+                alt="Poland flag" 
+                width="150px"
+                height="75px">
+        <p><b>Capital:</b> Warsaw</p>
+        <p><b>Population:</b> 38,268,000</p>        
+        <p>
+            Poland, officially the Republic of Poland (Polish: Rzeczpospolita Polska), is a country <br>located in Central Europe. Poland's topographically diverse territory extends from the beaches <br>along the Baltic Sea in the north to the Sudetes and Carpathian Mountains in its south. <br>The country is bordered by Lithuania and Kaliningrad Oblast of Russia to the northeast, <br>Belarus and Ukraine to the east, Slovakia and the Czech Republic to the south, and Germany <br>to the west. 
+        </p>
+        <br />
+        <table>
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Warsaw</td>
+                    <td>1,793,579</td>
+                </tr>
+                <tr>
+                    <td>Kraków</td>
+                    <td>780,981</td>
+                </tr>
+                <tr>
+                    <td>Łódź</td>
+                    <td>677,286</td>
+                </tr>
+                <tr>
+                    <td>Wrocław</td>
+                    <td>643,782</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Poland">Poland in Wikipedia</a>
+    </div>
+    <div>
+        <h2 id="Spain">Spain</h2>
+        <img src="images/spain.jpg" 
+                alt="Spain flag" 
+                width="150px"
+                height="75px">
+        <p><b>Capital:</b> Madrid</p>
+        <p><b>Population:</b> 47,450,795</p>              
+        <p>
+            Spain, formally the Kingdom of Spain (Spanish: Reino de España), is a country in <br>Southwestern Europe with some pockets of territory across the Strait of Gibraltar and <br>the Atlantic Ocean. Its continental European territory is situated on the Iberian Peninsula. <br>Its territory also includes two archipelagos: the Canary Islands off the coast of North Africa, <br>and the Balearic Islands in the Mediterranean Sea.
+        </p>
+        <br />
+        <table>
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Madrid</td>
+                    <td>3,266,126</td>
+                </tr>
+                <tr>
+                    <td>Barcelona</td>
+                    <td>1,608,746</td>
+                </tr>
+                <tr>
+                    <td>Valencia</td>
+                    <td>794,288</td>
+                </tr>
+                <tr>
+                    <td>Seville</td>
+                    <td>688,592</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Spain">Spain in Wikipedia</a>
+    </div>
+    <div>
+        <h2 id="Sweden">Sweden</h2>
+        <img src="images/sweden.jpg" 
+                alt="Sweden flag" 
+                width="150px"
+                height="75px">
+        <p><b>Capital:</b> Stockholm</p>
+        <p><b>Population:</b> 47,450,795</p> 
+        <p>
+            Sweden, officially the Kingdom of Sweden (Swedish: Konungariket Sverige), <br>is a Nordic country in Northern Europe. It borders Norway to the west and north, <br>Finland to the east, and is connected to Denmark in the southwest by a bridge-tunnel across <br>the Öresund Strait. Sweden is the largest country in Northern Europe, the third-largest <br>country in the European Union, and the fifth largest country in Europe.
+        </p>
+        <br />
+        <table>
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Stockholm</td>
+                    <td>1,515,017</td>
+                </tr>
+                <tr>
+                    <td>Göteborg</td>
+                    <td>599,011</td>
+                </tr>
+                <tr>
+                    <td>Malmö</td>
+                    <td>316,588</td>
+                </tr>
+                <tr>
+                    <td>Uppsala</td>
+                    <td>160,462</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Sweden">Sweden in Wikipedia</a>
+    </div>
+
+
+</body>
+
+</html>
